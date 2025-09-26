@@ -4,7 +4,7 @@ USE mydb;
 -- 10 LEFT JOIN QUERIES
 -- =========================================================
 
--- 1. List all project managers and their developers (even if no devs assigned)
+-- 1. List all project managers and their developers
 SELECT pm.username AS manager, d.username AS developer
 FROM project_managers pm
 LEFT JOIN developers d ON pm.employee_code = d.project_managers_employee_code;
